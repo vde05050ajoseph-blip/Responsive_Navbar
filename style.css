@@ -1,3 +1,237 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+:root{
+    --primary-color: #0D7A6A;
+    --secondary--color: #F5A623;
+    --primary--hover: #085749;
+    --secondary-hover: #D98A1A;
+    --text-color: white;
+    --background-color:#E6F4F1;
+}
+
+.header_wrapper{
+    background-color: var(--primary-color);
+    height: 3.5rem;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px rgb(22, 21, 21);
+}
+
+.header_wrapper li{
+    list-style-type: none;
+}
+
+.header_wrapper a{
+    text-decoration: none;
+}
+
+
+.logo {
+    color:var(--text-color);
+
+}
+
+.logo span{
+    color: var(--secondary--color);
+}
+
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.link_wrapper li{
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.link_wrapper li a{
+    color: white;
+    font-size: large;
+}
+
+.link_wrapper li a:hover{
+    color: var(--background-color);
+    transition: all .5s ease-in-out;
+    
+}
+
+.auth_wrapper li{
+    display: inline-block;
+    margin-inline: 5px;
+}
+
+.auth_wrapper li:nth-child(1) a{
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border-radius: 15px;
+    padding: 7px 20px;
+     font-size: medium;
+}
+
+.auth_wrapper li:nth-child(2) a{
+    color: white;
+    background-color: var(--secondary--color);
+    border-radius: 15px;
+    padding: 7px 20px;
+     font-size: medium;
+}
+
+.auth_wrapper li:nth-child(1) a:hover{
+    background-color: var(--background-color);
+      transition: all .5s ease-in-out;
+}
+
+.auth_wrapper li:nth-child(2) a:hover{
+    background-color: var(--secondary-hover);
+      transition: all .5s ease-in-out;
+}
+
+.header_wrapper i{
+    display: none;
+}
+
+@media (max-width:1070px) {
+    .auth_wrapper li:nth-child(2) a{
+        display: none;
+}
+
+.auth_wrapper li:nth-child(1) a{
+    color: white;
+    background-color: var(--secondary--color);
+    border-radius: 15px;
+    padding: 7px 20px;
+     font-size: medium;
+}
+
+.auth_wrapper li:nth-child(1) a:hover{
+    background-color: var(--secondary-hover);
+      transition: all .5s ease-in-out;
+}
+}
+
+
+@media (max-width:919px) {
+    .nav_wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .link_wrapper{
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+
+.header_wrapper{
+    background-color: var(--primary-color);
+    height: 3.5rem;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 2px rgb(22, 21, 21);
+}
+
+.header_wrapper li{
+    list-style-type: none;
+}
+
+.header_wrapper a{
+    text-decoration: none;
+}
+
+
+.logo {
+    color:var(--text-color);
+
+}
+
+.logo span{
+    color: var(--secondary--color);
+}
+
+.nav_wrapper{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 55px;
+    left: 300px;
+    background-color: var(--primary-color);
+    width: 200px;
+    padding: 5px 10px;
+}
+
+.link_wrapper{
+display: block;
+margin-bottom: 15px;
+}
+
+.link_wrapper li{
+    display: block;
+    
+}
+
+.link_wrapper li a{
+    color: white;
+    font-size: large;
+    line-height: 40px;
+}
+
+.link_wrapper li a:hover{
+    color: var(--background-color);
+    transition: all .5s ease-in-out;
+    
+}
+
+.auth_wrapper li{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.auth_wrapper li:nth-child(1) a{
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border-radius: 15px;
+    padding: 7px 20px;
+     font-size: medium;
+}
+
+.auth_wrapper li:nth-child(2) a{
+    display: block;
+    color: white;
+    background-color: var(--secondary--color);
+    border-radius: 15px;
+    padding: 7px 20px;
+     font-size: medium;
+}
+
+.auth_wrapper li:nth-child(1) a:hover{
+    background-color: var(--background-color);
+      transition: all .5s ease-in-out;
+}
+
+.auth_wrapper li:nth-child(2) a:hover{
+    background-color: var(--secondary-hover);
+      transition: all .5s ease-in-out;
+}
+
+.header_wrapper i{
+    display: block;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
 }
