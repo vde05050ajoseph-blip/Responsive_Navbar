@@ -169,7 +169,7 @@ body{
     position: absolute;
     flex-direction: column;
     top: 55px;
-    left: 300px;
+    left: 250px;
     background-color: var(--primary-color);
     width: 200px;
     padding: 5px 10px;
